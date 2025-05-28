@@ -3,7 +3,8 @@ package edu.kis.vh.nursery.list;
 public class Node {
 
     public int value;
-    public Node prev, next;
+    private Node prev;
+    private Node next;
 
     /**
      * Konstruktor klasy Node inicjalizujący wartość węzła.
@@ -15,5 +16,20 @@ public class Node {
     public Node(int i) {
         value = i;
     }
-    
+
+    public Node getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node prev) {
+        this.prev = prev;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
